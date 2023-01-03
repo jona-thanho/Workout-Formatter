@@ -1,5 +1,6 @@
 package com.example.workoutformatter
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
@@ -11,10 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         val pullUpInput = findViewById<EditText>(R.id.etNumPullUp)
         val resultField = findViewById<EditText>(R.id.etResult)
-        var resultFieldText = resultField.text
         val numPullUps = pullUpInput.text.toString()
+        val result = "$numPullUps pull-ups (/5)"
 
-        var result = "$numPullUps pull-ups (/5)"
-        resultFieldText = result
+        val intent = Intent(this, SecondActivity::class.java)
+        resultField.setText(result)
     }
 }
