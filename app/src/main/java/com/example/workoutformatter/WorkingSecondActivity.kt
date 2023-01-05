@@ -9,7 +9,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-
 class WorkingSecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +25,12 @@ class WorkingSecondActivity : AppCompatActivity() {
 
         // create button for instant copying
         val copyButton = findViewById<Button>(R.id.btnCopy)
+        val resultFieldText = resultField.text.toString()
+
         copyButton.setOnClickListener {
             val clipboard =
                 getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-            val clip = ClipData.newPlainText(label, text) as ClipData
+            val clip = ClipData.newPlainText(resultFieldText, resultFieldText) as ClipData
             clipboard.setPrimaryClip(clip)
         }
     }
