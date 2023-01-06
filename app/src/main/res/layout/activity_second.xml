@@ -4,6 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".SecondActivity">
 
+    <TextView
+        android:id="@+id/tvDmdPushUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Enter Diamond Push-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etSetTwoNumDmdPushUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSetTwoNumPullUp" />
+
+    <TextView
+        android:id="@+id/tvChinUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Enter Chin-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etSetTwoNumChinUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSetTwoNumDmdPushUp" />
+
+    <EditText
+        android:id="@+id/etSetTwoNumStdPushUp"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStdPushUp" />
+
+    <EditText
+        android:id="@+id/etSetTwoNumChinUp"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvStdPushUp"
+        app:layout_constraintEnd_toEndOf="@+id/tvChinUp"
+        app:layout_constraintStart_toStartOf="@+id/tvChinUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvChinUp" />
+
+    <TextView
+        android:id="@+id/tvStdPushUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Enter Standard Push-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etSetTwoNumStdPushUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSetTwoNumChinUp" />
+
+    <TextView
+        android:id="@+id/tvPullUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Enter Pull-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etSetTwoNumPullUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRate" />
+
+    <EditText
+        android:id="@+id/etSetTwoNumPullUp"
+        android:layout_width="56dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDmdPushUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPullUp" />
+
+    <EditText
+        android:id="@+id/etSetTwoNumDmdPushUp"
+        android:layout_width="55dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvChinUp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDmdPushUp"
+        app:layout_constraintStart_toStartOf="@+id/tvDmdPushUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvDmdPushUp" />
+
+    <Button
+        android:id="@+id/btnNextScndAct"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/text_color"
+        android:text="Next"
+        android:textColor="@color/background_color"
+        android:textSize="30sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="72dp"
+        android:text="Set #2"
+        android:textColor="@color/text_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPullUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -9,6 +9,6 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="background_color">#987748</color>
-    <color name="button_color">#D58616</color>
-    <color name="text_color">#EFECE7</color>
+    <color name="text_color">#523E24</color>
+    <color name="secondary_text_color">#F3C213</color>
 </resources>

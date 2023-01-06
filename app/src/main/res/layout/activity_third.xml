@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/tvRateDmdPushUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Diamond Push-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvOutOfFive4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOutOfFive1" />
+
+    <TextView
+        android:id="@+id/tvRateChinUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Chin-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvOutOfFive3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOutOfFive4" />
+
+    <EditText
+        android:id="@+id/etRateStdPushUp"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOutOfFive2"
+        app:layout_constraintEnd_toStartOf="@+id/tvOutOfFive2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etRateChinUp"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOutOfFive3"
+        app:layout_constraintEnd_toStartOf="@+id/tvOutOfFive3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRateStdPushUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Standard Push-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvOutOfFive2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOutOfFive3" />
+
+    <TextView
+        android:id="@+id/tvRatePullUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Pull-Ups:"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvOutOfFive1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRate" />
+
+    <EditText
+        android:id="@+id/etRatePullUp"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="138dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOutOfFive1"
+        app:layout_constraintEnd_toStartOf="@+id/tvOutOfFive1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etRateDmdPushUp"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/text_color"
+        android:ems="10"
+        android:inputType="textPersonName|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/secondary_text_color"
+        android:textCursorDrawable="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvOutOfFive4"
+        app:layout_constraintEnd_toStartOf="@+id/tvOutOfFive4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNextThdAct"
+        android:layout_width="163dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@color/text_color"
+        android:text="Next"
+        android:textColor="@color/background_color"
+        android:textSize="30sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOutOfFive2" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="42dp"
+        android:text="Rate Your Performance"
+        android:textColor="@color/text_color"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvRatePullUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOutOfFive1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="31dp"
+        android:text="/5"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvRateDmdPushUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etRatePullUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRatePullUp" />
+
+    <TextView
+        android:id="@+id/tvOutOfFive2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="65dp"
+        android:text="/5"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextThdAct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etRateStdPushUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateStdPushUp" />
+
+    <TextView
+        android:id="@+id/tvOutOfFive3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="40dp"
+        android:text="/5"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvRateStdPushUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etRateChinUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateChinUp" />
+
+    <TextView
+        android:id="@+id/tvOutOfFive4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="36dp"
+        android:text="/5"
+        android:textColor="@color/text_color"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvRateChinUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etRateDmdPushUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvRateDmdPushUp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

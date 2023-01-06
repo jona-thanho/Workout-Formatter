@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".ThirdActivity">
+    tools:context=".FourthActivity">
 
     <Button
         android:id="@+id/btnCopy"
@@ -15,12 +15,29 @@
         android:text="Copy"
         android:textColor="@color/background_color"
         android:textSize="30sp"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.701" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="197dp"
+        android:layout_height="71dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Restart"
+        android:textColor="@color/text_color"
+        android:textSize="30sp"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
 
     <TextView
         android:id="@+id/tvResult"
@@ -40,12 +57,13 @@
     <EditText
         android:id="@+id/etResult"
         android:layout_width="343dp"
-        android:layout_height="302dp"
-        android:backgroundTint="@color/white"
+        android:layout_height="214dp"
+        android:backgroundTint="@color/text_color"
         android:ems="10"
         android:inputType="textMultiLine"
         android:lines="20"
-        android:textSize="22sp"
+        android:textColor="@color/text_color"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

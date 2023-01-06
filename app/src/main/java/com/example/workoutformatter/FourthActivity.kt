@@ -3,28 +3,41 @@ package com.example.workoutformatter
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 
-class ThirdActivity : AppCompatActivity() {
+class FourthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_third)
-        // display input into copyable format
-        val resultField = findViewById<EditText>(R.id.etResult)
-        val numPullUps = intent.getStringExtra("NUM_PULL_UPS")
-        val numDmdPushUps = intent.getStringExtra("NUM_DMD_PUSH_UPS")
+        setContentView(R.layout.activity_fourth)
 
-        val result = "$numPullUps pull-ups (/5)\n" +
-                "$numDmdPushUps diamond push-up (4/5)\n" +
-                "??? chin up (2/5)\n" +
-                "??? standard push-up (2/5)"
+        val finalNumPullUps = intent.getStringExtra("PULL_UP_RESULTS")
+        val finalRatingPullUps = intent.getStringExtra("RATING_PULL_UPS")
+
+        val finalNumDmdPushUps = intent.getStringExtra("DMD_PUSH_UP_RESULTS")
+        val finalRatingDmdPushUps = intent.getStringExtra("RATING_DMD_PUSH_UPS")
+
+        val finalNumChinUps = intent.getStringExtra("CHIN_UP_RESULTS")
+        val finalRatingChinUps = intent.getStringExtra("RATING_CHIN_UPS")
+
+        val finalNumStdPushUps = intent.getStringExtra("STD_PUSH_UP_RESULTS")
+        val finalRatingStdPushUps = intent.getStringExtra("RATING_STD_PUSH_UPS")
+
+        val resultField = findViewById<EditText>(R.id.etResult)
+
+        val intentMainActivity = Intent(this, MainActivity::class.java)
+
+        // display input into desired format
+        val result = "$finalNumPullUps pull-ups ($finalRatingPullUps/5)\n" +
+                "$finalNumDmdPushUps diamond push-ups ($finalRatingDmdPushUps/5)\n" +
+                "$finalNumChinUps chin-ups ($finalRatingChinUps/5)\n" +
+                "$finalNumStdPushUps standard push-ups ($finalRatingStdPushUps/5)"
         resultField.setText(result)
 
-        // create button for instant copying
-
+        // create button for easy copying
         val copyButton = findViewById<Button>(R.id.btnCopy)
         val resultFieldText = resultField.text.toString()
         copyButton.setOnClickListener {
@@ -32,6 +45,12 @@ class ThirdActivity : AppCompatActivity() {
                 getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText(resultFieldText, resultFieldText) as ClipData
             clipboard.setPrimaryClip(clip)
+        }
+
+        // create button to restart app
+        val restartButton = findViewById<Button>(R.id.btnRestart)
+        restartButton.setOnClickListener {
+            startActivity(intentMainActivity)
         }
     }
 }
