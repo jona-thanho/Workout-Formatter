@@ -7,38 +7,6 @@
     android:background="@color/background_color"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/etNumDmdPushUp"
-        android:layout_width="70dp"
-        android:layout_height="62dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
-
-    <TextView
-        android:id="@+id/tvEnterDiamondPushUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="17dp"
-        android:text="Enter Diamond Push-Ups:"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/etNumPullUp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306" />
-
     <TextView
         android:id="@+id/tvDmdPushUp"
         android:layout_width="wrap_content"
