@@ -26,9 +26,10 @@ class FourthActivity : AppCompatActivity() {
         val finalNumStdPushUps = intent.getStringExtra("STD_PUSH_UP_RESULTS")
         val finalRatingStdPushUps = intent.getStringExtra("RATING_STD_PUSH_UPS")
 
-        val resultField = findViewById<EditText>(R.id.etResult)
+
 
         val intentMainActivity = Intent(this, MainActivity::class.java)
+        val resultField = findViewById<EditText>(R.id.etResult)
 
         // display input into desired format
         val result = "$finalNumPullUps pull-ups ($finalRatingPullUps/5)\n" +
@@ -37,10 +38,36 @@ class FourthActivity : AppCompatActivity() {
                 "$finalNumStdPushUps standard push-ups ($finalRatingStdPushUps/5)"
         resultField.setText(result)
 
+        // create button for changing diamond push-ups to dips
+        val changeButton = findViewById<Button>(R.id.btnChange)
+        var door = true
+
+        changeButton.setOnClickListener {
+            if (door) {
+                val result = "$finalNumPullUps pull-ups ($finalRatingPullUps/5)\n" +
+                        "$finalNumDmdPushUps dips ($finalRatingDmdPushUps/5)\n" +
+                        "$finalNumChinUps chin-ups ($finalRatingChinUps/5)\n" +
+                        "$finalNumStdPushUps standard push-ups ($finalRatingStdPushUps/5)"
+                resultField.setText(result)
+                door = false
+            }
+            else {
+                val result = "$finalNumPullUps pull-ups ($finalRatingPullUps/5)\n" +
+                        "$finalNumDmdPushUps diamond push-ups ($finalRatingDmdPushUps/5)\n" +
+                        "$finalNumChinUps chin-ups ($finalRatingChinUps/5)\n" +
+                        "$finalNumStdPushUps standard push-ups ($finalRatingStdPushUps/5)"
+
+                resultField.setText(result)
+                door = true
+            }
+        }
+
+
         // create button for easy copying
         val copyButton = findViewById<Button>(R.id.btnCopy)
-        val resultFieldText = resultField.text.toString()
+
         copyButton.setOnClickListener {
+            val resultFieldText = resultField.text.toString()
             val clipboard =
                 getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText(resultFieldText, resultFieldText) as ClipData

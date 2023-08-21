@@ -1,10 +1,15 @@
 package com.example.workoutformatter
 
+import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.btnNextMainAct)
 
         val intentSecondActivity = Intent(this, SecondActivity::class.java)
+
+        // TODO: implement soft keyboard opening upon app startup
 
         nextButton.setOnClickListener {
             val numPullUps = pullUpInput.text.toString()

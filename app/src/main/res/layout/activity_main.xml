@@ -112,6 +112,7 @@
         android:textCursorDrawable="@color/text_color"
         android:textSize="24sp"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toTopOf="@+id/tvDmdPushUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -136,8 +136,8 @@
 
     <Button
         android:id="@+id/btnNextThdAct"
-        android:layout_width="163dp"
-        android:layout_height="0dp"
+        android:layout_width="161dp"
+        android:layout_height="68dp"
         android:layout_marginBottom="65dp"
         android:backgroundTint="@color/text_color"
         android:text="Next"
@@ -146,6 +146,7 @@
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvOutOfFive2" />
 

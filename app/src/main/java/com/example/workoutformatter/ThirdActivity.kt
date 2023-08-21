@@ -13,16 +13,16 @@ class ThirdActivity : AppCompatActivity() {
         setContentView(R.layout.activity_third)
 
         val pullUpResults =
-            "Pull-Ups (${intent.getStringExtra("SET_ONE_NUM_PULL_UPS")}, " +
+            "Pull-Ups (${intent.getStringExtra("SET_ONE_NUM_PULL_UPS")} | " +
                     "${intent.getStringExtra("SET_TWO_NUM_PULL_UPS")}):"
         val dmdPushUpResults =
-            "Diamond Push-Ups (${intent.getStringExtra("SET_ONE_NUM_DMD_PUSH_UPS")}, " +
+            "Diamond Push-Ups (${intent.getStringExtra("SET_ONE_NUM_DMD_PUSH_UPS")} | " +
                 "${intent.getStringExtra("SET_TWO_NUM_DMD_PUSH_UPS")}):"
         val chinUpResults =
-            "Chin-Ups (${intent.getStringExtra("SET_ONE_NUM_CHIN_UPS")}, " +
+            "Chin-Ups (${intent.getStringExtra("SET_ONE_NUM_CHIN_UPS")} | " +
                 "${intent.getStringExtra("SET_TWO_NUM_CHIN_UPS")}):"
         val stdPushUpResults =
-            "Standard Push-Ups (${intent.getStringExtra("SET_ONE_NUM_STD_PUSH_UPS")}, " +
+            "Standard Push-Ups (${intent.getStringExtra("SET_ONE_NUM_STD_PUSH_UPS")} | " +
                 "${intent.getStringExtra("SET_TWO_NUM_STD_PUSH_UPS")}):"
 
         val pullUpText = findViewById<TextView>(R.id.tvRatePullUp)
@@ -52,16 +52,16 @@ class ThirdActivity : AppCompatActivity() {
 //        }
 
         intentFourthActivity.putExtra("PULL_UP_RESULTS",
-            "${intent.getStringExtra("SET_ONE_NUM_PULL_UPS")}, " +
+            "${intent.getStringExtra("SET_ONE_NUM_PULL_UPS")} | " +
                     "${intent.getStringExtra("SET_TWO_NUM_PULL_UPS")}")
         intentFourthActivity.putExtra("DMD_PUSH_UP_RESULTS",
-            "${intent.getStringExtra("SET_ONE_NUM_DMD_PUSH_UPS")}, " +
+            "${intent.getStringExtra("SET_ONE_NUM_DMD_PUSH_UPS")} | " +
                     "${intent.getStringExtra("SET_TWO_NUM_DMD_PUSH_UPS")}")
         intentFourthActivity.putExtra("CHIN_UP_RESULTS",
-            "${intent.getStringExtra("SET_ONE_NUM_CHIN_UPS")}, " +
+            "${intent.getStringExtra("SET_ONE_NUM_CHIN_UPS")} | " +
                     "${intent.getStringExtra("SET_TWO_NUM_CHIN_UPS")}")
         intentFourthActivity.putExtra("STD_PUSH_UP_RESULTS",
-            "${intent.getStringExtra("SET_ONE_NUM_STD_PUSH_UPS")}, " +
+            "${intent.getStringExtra("SET_ONE_NUM_STD_PUSH_UPS")} | " +
                     "${intent.getStringExtra("SET_TWO_NUM_STD_PUSH_UPS")}")
 
         nextButton.setOnClickListener {
